@@ -1,168 +1,238 @@
-<img src="https://duckmath.org/assets/img/duck.webp" width="60px"  align="left" />
+# Nxt Lnk
+
+**Custom bio links for creatives who love coding. Made this first to use for my own weblinks vjy.me/lnk**
+
+A perfect custom alternative for linktree, bio and other shortner platform. Check live version here [nxtlnk.xyz](https://nxtlnk.xyz)
+
+Pull requests are always welcome. In case you want inspiration or new features on what to add, check out the issues for feature requests.
+
+Coffee fuels coding ☕️
+
+<a href="https://www.buymeacoffee.com/realvjy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+**Table of Contents**
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+  - [Usage](#usage)
+  - [Quick Start](#quick-start)
+  - [Manual Setup](#manual-setup)
+  - [Getting Started](#getting-started)
+  - [Images](#images)
+  - [Update Bio](#update-bio)
+    - [Add/Update](#update-bio)
+    - [Enable/Disable](#update-bio)
+    - [Featured Banner](#update-bio)
+  - [Update Links](#update-links)
+    - [Enable/Disable](#update-links)
+    - [Add/Update](#update-links)
+  - [Frontend](#frontend)
+  - [SEO](#seo)
+  - [Google Analytics](#google-analytics)
+  - [Custom Domain](#custom-domain)
+  - [Favicon](#favicon)
+  - [Contributors](#contributors)
+  
+  
+## Usage
+`nxt-lnk` template used to create your custom bio link and self-host on Vercel or Netlify using your own domain. Need little understanding of code :) ☕
+
+Usually, you don't need to worry a lot about coding if you're just updating information in `BioData.js` and `LinkData.js`. To deep dive know more  [Next.js](https://nextjs.org/docs) and [React](https://reactjs.org/docs/getting-started.html) official documentaion.
+
+For customization used [styled components](https://styled-components.com/). If you want to customize styling you can [learn more here](https://styled-components.com/docs).
+
+**Template auto support dark-mode depending on system cofig.**
+
+## Quick Start
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/realvjy/nxt-lnk) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/realvjy/nxt-lnk)
 
 
-# DuckMath.org — Actually Unblocked Games
-
-
-**1,000,000+ active users since 2022** — DuckMath.org is a fast, lightweight unblocked games platform focused on accessibility, safety, and a social gaming experience for players everywhere.
-
-
-
-> Short description: DuckMath.org hosts 250+ browser games, updates daily, and provides features like leaderboards, an in-site economy (coins), a seasonal battlepass, cloaking tools, and multiple proxy integration options so you can play from a school or work network.
-
----
-
-## Table of contents
-
-- [About](#about)
-- [Key Features](#key-features)
-  - [Leaderboard & Score Verification](#leaderboard--score-verification)
-  - [Authentication (Supabase)](#authentication-supabase)
-  - [Coins & In-Game Store](#coins--in-game-store)
-  - [Battlepass & Seasons](#battlepass--seasons)
-  - [Games Catalog](#games-catalog)
-  - [Proxies & Cloak Mode](#proxies--cloak-mode)
-  - [Discord Integration](#discord-integration)
-- [How to Deploy (Quick)](#how-to-deploy-quick)
-- [Recommended Hosting & Tips](#recommended-hosting--tips)
-- [Security & Privacy](#security--privacy)
-- [FAQ](#faq)
-- [Contributing & Support](#contributing--support)
-- [Changelog](#changelog)
-- [Contact](#contact)
-
----
-
-## About
-
-DuckMath.org was built to make high-quality browser games available to everyone — even behind restrictive filters. We combine a large playable catalog with community features (leaderboards, coins, battlepasses) and a small footprint so pages load fast on school and low-end devices.
-
-We update the catalog daily and add new community features regularly — the current site lists \~250+ games across categories like Action, Puzzle, Multiplayer, Retro, and Indie.
-
-## Key Features
-
-### Leaderboard & Score Verification
-
-A fully featured leaderboard lets players submit screenshots and claim high scores. Submissions go through a lightweight verification flow handled by the DuckMath moderation team to keep cheat submissions low and maintain fair competition.
-
-- Upload screenshot proof when submitting a score
-- Manual verification queue + automated checks (file metadata, timestamp, visual heuristics)
-- Public leaderboard per game and global leaderboard pages
-
-### Authentication (Supabase)
-
-We use Supabase Auth to keep login simple and stateless across our multiple links. This lets players remain logged in across mirror links and proxies without re-authenticating constantly.
-
-- Social logins and email/password available
-- Token-based sessions stored safely in secure cookies/local storage
-- Lightweight serverless rules for cross-domain session checks
-
-### Coins & In-Game Economy
-
-Players earn coins while playing and can spend them in the site shop for cosmetic items like cursors, backgrounds, badges, and limited-time items.
-
-- Earn coins through gameplay, daily logins, and events
-- Spend coins in a cataloged store with previews and ownership
-- Transaction logs and rollback support for moderators
-
-### Battlepass & Seasons
-
-Inspired by popular seasonal systems, DuckMath’s Battlepass runs in seasons (current season: **Medieval Times**) where players earn XP to unlock rewards.
-
-- Season XP earned through playing and completing challenges
-- Free and premium reward tracks (premium items purchasable with coins)
-- Seasonal badges and exclusive cursors
-
-### Games Catalog
-
-A curated library of browser-friendly games (HTML5, WebGL, iframe wrappers for some remote hosts). Popular examples on the site include titles like *Omori Online (unblocked)*, *Deltarune Web*, and Roblox via now\.gg links.
-
-- 250+ games sorted by category and popularity
-- Daily updates and featured games carousel
-- Search + filters (genre, multiplayer, new, trending)
-
-### Proxies & Cloak Mode
-
-DuckMath integrates multiple trusted proxy backends (holyunblocker, rammerhead, ultra violet web proxy) so players can access content from networks that would otherwise block the target domains.
-
-- Pick different proxy backends to improve reach and reduce downtime
-- Cloak Mode: change your browser tab title and favicon to look like a classroom page (example: Google Classroom or about\:blank) for discreet browsing
-- Important: Use proxies responsibly and follow local rules and school policies.
-
-### Discord Integration
-
-We embed Discord chat using widgetbot.io so players can join in-site chat without leaving the page or logging into a separate client.
-
-- Chat widget with moderation and channel selection
-- Optional linking to the full Discord server
-
----
-<img width="2558" height="1269" alt="Screenshot 2025-08-13 085518" src="https://github.com/user-attachments/assets/c99be6d3-6307-4992-a309-f69e8b053b65" />
-<img width="2531" height="1258" alt="Screenshot 2025-08-13 091023" src="https://github.com/user-attachments/assets/96095388-500a-4a81-be09-b96e7da5d361" />
-
-
----
-
-## How To Deploy (Quick)
-
-If you want to fork and host DuckMath locally or publicly, follow these steps:
-
-1. Clone the repository:
-
+## Manual Setup
+Run the following command to create a new project with this template:
 ```bash
-git clone https://github.com/your-username/duckmath.git
-cd duckmath
+yarn create next-app your-app-name -e https://github.com/realvjy/nxt-lnk
+# or
+npx create-next-app your-app-name -e https://github.com/realvjy/nxt-lnk
 ```
 
-2. Run locally for quick testing:
+## Getting Started
 
+Use any editor to work on editing. I use [vscode](https://code.visualstudio.com/)
+
+First, run the development server:
 ```bash
-npx serve
-# or, if you prefer python's simple server:
-# python3 -m http.server 8080
+npm run dev
+# or
+yarn dev
 ```
 
-3. Deploy to a static host:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Vercel**: `vercel --prod` (recommended for automatic CI/CD)
-- **Cloudflare Pages**: connect GitHub repo and set the build to `npm run build` if you have a build step, or use direct static deploy.
-- **GitHub Pages**: publish the `main` branch or the `gh-pages` folder.
+**Important files to edit or update info**
+`data/BioData.js` All basic info update here
+`data/LinksData.js` Contain all the links
+`Components/WebLinks.js` UI and stylesheet
+`Components/icons/index.js` Contain all SVG icon compo
 
-4. Configure DNS or custom domains (if desired), enable HTTPS, and test proxies and auth flows.
+You can start editing the page by modifying `data/BioData.js` and `data/LinksData.js`. The page auto-updates as you edit the file.
 
----
 
-## Recommended Hosting & Tips
 
-- Use an edge/CDN backed host (Vercel, Cloudflare Pages, Netlify) to keep latency low for players in different regions.
-- Enable Brotli/Gzip compression and long cache headers for static assets to improve load times.
-- Use a lightweight serverless function when you need to proxy auth or handle leaderboard submissions.
+## Images
+All images stored inside `public` folder of the project.
 
-## Security & Privacy
+## Update Bio
+**Example from** `BioData.js` :
+```jsx
+const bioData = [
+    {
+        name: 'vijay verma',
+        username: '@realvjy',
+        url: 'https://vjy.me',
+        titleImg: true,
+        avatar: '/avatar.png',
+        nftAvatar: true,
+        description: 'A short description/bio about you goes here',
+        subdesc: 'This is secondary description. If you do not need, you can remove it',
+        newProductUrl: 'https://vjy.me/lnk',
+        newProduct: true,
+    },
+];
 
-- We store minimal PII. Authentication uses Supabase and secure tokens.
-- Uploaded leaderboard images are scanned automatically and reviewed by moderators.
-- Proxies are third-party services — review their policies and use them at your own risk.
+export default bioData;
+```
+**Avatar**
+Just replace `avatar.png`. 200x200px will be good.
 
----
+**Hex/NFT avatar view**
+`nftAvatar: true` enable hex shape on avatar image.
+`nftAvatar: false` made it in oval shape.
 
-## Contributing & Support
+**Title**
+By default `titleImg: true` and it look for `title.svg`. Replace svg with logo **logo**. Make sure to use `title.svg ` name.
 
-We love contributions. If you want to help:
+**Featured banner**
+`newProductUrl` and `newProduct` used for getting featured banner. You can replace the image `newproduct.png`  with any design you like.
 
-- Star the repository to show support
-- Open issues for bugs or feature requests
-- Submit PRs for new games, UI improvements, or moderation tools
+`newProduct: true` show banner. Default is `true` make it false to hide.
 
-If you want to support the project financially or with hosting, reach out through the repo or Discord server.
 
----
+## Update Links
+**Example from** `LinksData.js` :
+```jsx
+const webLinks = [
+    // All social profile
+    {
+        title: 'Twitter',
+        url: 'https://twitter.com/realvjy',
+        type: 'social',
+        icon: '/twitter.svg',
+        on: true
+    },
+    ...
+    ...
+    
+    {
+        title: 'Instagram',
+        url: 'https://instagram.com/realvjy',
+        type: 'social',
+        icon: '/insta.svg',
+        on: true
+    }
+];
+export default webLinks;
+```
+**Enable/Disable Social Media**
+Find `type: social` and change `on:true|false`
 
-## Socials
-Contact us on any of these!
+| Title           | on (default)    | 
+| ---------       | --------        | 
+| `Twitter`       | `true`          | 
+| `Instagram`     | `true`          | 
+| `Dribbble`      | `false`          | 
+| `Medium`        | `false`          | 
+| `Github`        | `true`          | 
+| `Youtube`       | `false`          | 
+| `Behance`       | `true`          | 
+| `Figma`         | `true`          | 
+| `Linkedin`      | `false`          | 
+| `Mastodon`      | `false`          | 
+| `Hive Social`    | `false`          | 
+| `Post.news`      | `false`          | 
 
-- Github [github/duckmath](https://github.com/duckmath/duckmath.github.io)
-- Discord: [The Duck Pond](https://discord.gg/aMUVSARrEy)
-- Tiktok: [rockyf2p](https://www.tiktok.com/@rockyf2p)
-- Youtube [duckmath yt](https://www.youtube.com/@duckmathgames)
-- Instagram [duckmath insta](https://www.instagram.com/duckmath/reels/)
+Setting `on: true` show the social icon. 
+The social media icons are arranged in a single row at the top of the page below description. If you want to use as list, chagne type to `type: 'other'`
+
+**Add new Social Media link**
+create a new block by copying this
+```jsx
+    {
+        title: 'Social Name',
+        url: 'https://link.com/whateverurl',
+        type: 'social',
+        icon: '/newiconname.svg',
+        on: true
+    }
+```
+Update all info and make sure to add a `newiconname.svg` file in [public](#images) folder.
+Then you have to add new section to frontend `components/WebLinks.js`
+
+## Frontend
+All frontend customization done inside `components/WebLinks.js`. If you wante to update and add new section just look this file and update according to your need.
+
+**Update section**
+
+Look for Section codes. Like if you want to change `install` type to `featured` Update  the `type: 'featured'` in `LinkData.js` then update all `install` related code in `WebLinks.js` to `featured`
+
+```js
+// Collect all links filter by type - social, project, nft and other etc=
+// get data for install section
+const install = allLinks.filter((el) => {
+  return el.type === "install" && el.on
+});
+
+...
+...
+
+{/* Featured Section */ }
+<LinkSection>
+  <h3>{install[0].type}</h3>
+  {
+    install.map((i) => {
+      return (
+        <Link href={i.url} passHref key={i.title}>
+          <LinkBox>
+            <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+          </LinkBox>
+        </Link>
+      )
+    })
+  }
+</LinkSection>
+{/* End Featured Section */ }
+```
+**Add New section**
+
+Add new section with specific `type` in `Linkdata.js`. Then copy `LinkSection` Code to create new section in `WebLinks.js` file. Make sure to create get data of that section as well.
+      
+## SEO
+Already added `next-seo`. All you have to do is `update next-seo.config.js` file. Make sure to add direct link of `preview.jpg`file, like - `https://vjy.me/preview.jpg`.
+
+## Google Analytics
+In Vercel, you can set this by going to your project, then Settings and finally [Environments Variables](https://vercel.com/docs/concepts/projects/environment-variables). To get GA 4 code `G-ZXX0000XXX` follow [these steps ](https://support.google.com/analytics/answer/9304153?hl=en)
+
+<img src="https://vjy.me/ga-analytics.png" style="width: 500px !important;"/>
+
+
+## Custom Domain
+By default vercel give you a subdomain with your project name like - [nxtlnk.vercel.app](https:nxtlnk.vercel.app). But you can add own domain. 
+
+Vercel/Netlify give you option to add any domain to the deployed project like [vjy.me/lnk](https://vjy.me/lnk) or [nxtlnk.xyz](https://nxtlnk.xyz). All you have to do is follow official [Vercel documentaion](https://vercel.com/docs/concepts/projects/domains/add-a-domain) or [Netlify Documentaion](https://www.netlify.com/blog/2021/12/20/how-to-add-custom-domains-to-netlify-sites/)
+
+## Favicon
+Create a `favicon.ico` file and place inside `public` folder. I use [favicon.io](https://favicon.io/favicon-converter/)
+
+## Contributors
+Created by [realvjy](https://twitter.com/realvjy). You are always welcome to share your feedback on twitter or any social media platform.
+
+If you want to contribute. Just create a pull request. 
+    
